@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Usuário</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de Usuário</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-<div class="container">
+  <div class="container">
+    <div class="content">
+        <div class="image-container">
+            <img src="https://media.licdn.com/dms/image/v2/D4D0BAQEp0xUAqFWnVw/company-logo_200_200/company-logo_200_200/0/1714051798075/vox_tecnologia_logo?e=2147483647&v=beta&t=f5trki_M7WxfZyfQyNDV9-r51XM01GTNAPqZDQSddRQ" alt="Logo da Vox Tecnologia" />
+          </div>
+          <div class="cadastro-container">
+      <form id="registration-form" action="php/config.php" method="POST">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" placeholder="Insira um nome" autofocus />
+        <div id="name-error" class="error-message"></div>
 
-</div>
-<script src="js/main.js"></script>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Insira email" />
+        <div id="email-error" class="error-message"></div>
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" placeholder="Insira uma senha" />
+        <div id="password-error" class="error-message"></div>
+
+        <button type="submit">Enviar</button>
+        <div id="form-error" class="error-message"></div>
+      </form>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
 </body>
 </html>
